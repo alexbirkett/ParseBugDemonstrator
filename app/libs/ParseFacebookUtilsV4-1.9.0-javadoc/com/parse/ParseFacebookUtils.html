@@ -103,7 +103,7 @@ extends <a href="http://developer.android.com/reference/java/lang/Object.html?is
  <p/>
  Add the Facebook SDK: <code>compile 'com.facebook.android:facebook-android-sdk:4.x.x'</code>
  <p/>
- Add the following to the <code>&lt;application&gt;</code> node in your AndroidManifest.xml:
+ Add the following to the <code>&amp;lt;application&amp;gt;</code> node in your AndroidManifest.xml:
  <pre>
  &lt;meta-data
         android:name="com.facebook.sdk.ApplicationId"
@@ -131,7 +131,7 @@ extends <a href="http://developer.android.com/reference/java/lang/Object.html?is
  public class MyActivity extends Activity {
    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
      super.onActivityResult(requestCode, resultCode, data);
-     ParseFacebookUtils.onActivityResult(requestCode, resultCode, data);
+     ParseFacebookUtils.finishAuthentication(requestCode, resultCode, data);
    }
  }
  </pre>
